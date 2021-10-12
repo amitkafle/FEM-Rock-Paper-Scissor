@@ -75,6 +75,13 @@ stepone.addEventListener("click", (e) => {
     housepickedbg.classList.add(`house__picked--${house_selected_icon}-icon-won`);
 }
 
+if(result == "TIE"){
+  icons.forEach(icon => {
+    userpickedbg.classList.remove(`user__picked--${icon}-icon-won`)
+    housepickedbg.classList.remove(`house__picked--${icon}-icon-won`)
+})
+}
+
   resultmsg.textContent = result;
   display_score.textContent = score;
 
