@@ -1,0 +1,63 @@
+.step_one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.paper,
+.scissor,
+.rock {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.paper {
+  border: 15px solid $clr-paper-border;
+  box-shadow: $box-shadow-inner, 0 7px 0 $clr-paper-shadow;
+}
+.rock {
+  grid-column: span 2;
+  border: 15px solid $clr-rock-border;
+  box-shadow: $box-shadow-inner, 0 7px 0 $clr-rock-shadow;
+}
+.scissor {
+  border: 15px solid $clr-scissor-border;
+  box-shadow: $box-shadow-inner, 0 7px 0 $clr-scissor-shadow;
+}
+
+.paper::before,
+.rock::before,
+.scissor::before {
+  content: "";
+  height: 200px;
+  width: 10px;
+  background-color: $clr-bar;
+  position: absolute;
+  z-index: -1;
+  cursor: default;
+  pointer-events: none;
+}
+
+.paper::before {
+  transform: rotate(89.5deg);
+  left: 50%;
+}
+
+.scissor::before {
+  transform: rotate(30deg);
+  right: 40%;
+  top: 25%;
+}
+
+.rock::before {
+  transform: rotate(-30deg);
+  left: 40%;
+  bottom: 20%;
+}

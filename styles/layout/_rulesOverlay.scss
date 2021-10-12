@@ -1,0 +1,49 @@
+.container--overlay{
+    background: hsla(0, 0, 0, 0.5);
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pointer-none{
+  pointer-events: none;
+}
+
+.overlay__card--toggle{
+    visibility: hidden;
+}
+
+.overlay {
+  &__card {
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  &__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+  }
+  &__title {
+    font-size: 2rem;
+    color: $clr-dark-text;
+  }
+  &__image{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+  }
+  &__close{
+    cursor: pointer;
+  }
+}

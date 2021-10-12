@@ -1,0 +1,16 @@
+.btn__rules {
+  border: 2px solid $clr-header-outline;
+  border-radius: 6px;
+  padding: 5px 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: $clr-light-text;
+  cursor: pointer;
+
+  @media screen and (max-width: 376px) {
+    right: 25%;
+    transform: translateX(-50%);
+  }
+}
+

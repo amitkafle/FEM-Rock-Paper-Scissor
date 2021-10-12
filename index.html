@@ -1,17 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
+  <body>
+    <!--
+      Use "container--overlay" to add overlay to the container when Rules button is clicked
+    -->
+    <div class="layer"></div>
+    <div class="container">
+      <header class="header">
+        <img
+          src="./images/logo.svg"
+          alt="Rock Paper Scissor"
+          class="header__logo"
+        />
 
-<body>
+        <div class="score">
+          <div class="score__title">SCORE</div>
+          <div class="score__score">0</div>
+        </div>
+      </header>
 
-  <script src="./scripts/index.js"></script>
-</body>
+      <section class="step_one gamearea">
+        <div class="paper" selected-icon="paper"><img src="./images/icon-paper.svg" alt="Paper" class="paper__image"></div>
+        <div class="scissor" selected-icon="scissor"><img src="./images/icon-scissor.svg" alt="Scissor" class="scissor__image"></div>
+        <div class="rock" selected-icon="rock"><img src="./images/icon-rock.svg" alt="Rock" class="rock__image"></div>
+      </section>
 
+      <!-- <section class="step_two gamearea hide">
+        <div class="user">
+          <div class="user__title">YOU PICKED</div>
+          <div class="user__picked user__picked--paper">
+            <img
+              src="./images/icon-paper.svg"
+              alt="Paper"
+              class="user__paper"
+            />
+          </div>
+        </div>
+        <div class="house">
+          <div class="house__title">THE HOUSE PICKED</div>
+          <div class="house__picked house__picked--empty"></div>
+        </div>
+      </section>
+
+      <section class="step_three gamearea hide">
+        <div class="user">
+          <div class="user__title">YOU PICKED</div>
+          <div class="user__picked user__picked--paper">
+            <img
+              src="./images/icon-paper.svg"
+              alt="Paper"
+              class="user__paper"
+            />
+          </div>
+        </div>
+        <div class="house">
+          <div class="house__title">THE HOUSE PICKED</div>
+          <div class="house__picked house__picked--rock">
+            <img
+              src="./images/icon-rock.svg"
+              alt="Rock"
+              class="user__rock"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="step_four gamearea hide">
+        <div class="user">
+          <div class="user__title">YOU PICKED</div>
+          <div class="user__picked user__picked--paper">
+            <img
+              src="./images/icon-paper.svg"
+              alt="Paper"
+              class="user__paper user__icon"
+            />
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="result__title"></div>
+          <div class="play_again">PLAY AGAIN</div>
+        </div>
+
+        <div class="house">
+          <div class="house__title">THE HOUSE PICKED</div>
+          <div class="house__picked house__picked--rock">
+            <img
+              src="./images/icon-rock.svg"
+              alt="Rock"
+              class="user__rock house__icon"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="btn btn__rules">RULES</div>
+      <div class="overlay">
+        <div class="overlay__card overlay__card--toggle">
+          <div class="overlay__header">
+            <h3 class="overlay__title">RULES</h3>
+            <img
+              src="./images/icon-close.svg"
+              alt="close"
+              class="overlay__close"
+            />
+          </div>
+          <img
+            src="./images/image-rules.svg"
+            alt="rules"
+            class="overlay__image"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/rules.js" defer></script>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
