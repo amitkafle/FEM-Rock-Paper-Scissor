@@ -3,6 +3,35 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
+
+}
+//animation to scale out first window
+.scale-out {
+  animation: scale-out 200ms ease-in-out forwards;
+}
+
+
+@keyframes scale-out {
+  0%{
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center;
+  }
+  15%{
+    transform: translate(-50%, -50%) scale(0.7);
+    transform-origin: center;
+  }
+  25%{
+    transform: translate(-50%, -50%) scale(0.5);
+    transform-origin: center;
+  }
+  50%{
+    transform: translate(-50%, -50%) scale(0.3);
+    transform-origin: center;
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center;
+  }
 }
 
 .paper,

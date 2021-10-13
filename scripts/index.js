@@ -85,8 +85,17 @@ if(result == "TIE"){
   resultmsg.textContent = result;
   display_score.textContent = score;
 
-  stepone.classList.add("hide");
+
+  stepone.classList.remove("scale-in")
+  setTimeout(()=>{
+    stepone.classList.add("hide");
+  }, 200)
+  stepone.classList.add("scale-out");
   stepfour.classList.remove("hide");
+  stepfour.classList.remove("scale-out");
+  setTimeout(()=>{
+    stepfour.classList.add("scale-in");
+  }, 200)
 });
 
 function gameaction(user, house) {
@@ -105,6 +114,13 @@ function gameaction(user, house) {
 
 
 playagain.addEventListener("click", ()=>{
-    stepfour.classList.add("hide");
+  stepfour.classList.remove("scale-in");
+    setTimeout(()=>{
+      stepfour.classList.add("hide");
+    }, 200)
+    stepfour.classList.add("scale-out");
+
+    stepone.classList.remove("scale-out");
     stepone.classList.remove("hide");
+    stepone.classList.add("scale-in");
 })
