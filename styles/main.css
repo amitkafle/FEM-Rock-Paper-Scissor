@@ -581,11 +581,11 @@ body {
   }
 
   .btn__rules {
-    right: 25%;
-    transform: translateX(-50%);
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
     padding: 5px 20px;
     position: absolute;
-    bottom: 40px;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 2px;
