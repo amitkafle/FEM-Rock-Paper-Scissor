@@ -1,0 +1,28 @@
+.result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
+  &__title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 800;
+    color: $clr-light-text;
+    z-index: 3;
+    text-align: center;
+  }
+
+  .play_again {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background-color: $clr-light-text;
+    border-radius: 5px;
+    padding: 10px 35px;
+    color: $clr-dark-text;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+  }
+}

@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock Paper Scissor Game">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <title>FEM - Rock Paper Scissors</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +22,9 @@
 
   <body>
     <!--
-      Use "container--overlay" to add overlay to the container when Rules button is clicked
+      Use "container--overlay" in class "layer" to add overlay to the container when Rules button is clicked
     -->
-    <div class="layer"></div>
+    <div class="layer scale-out-overlay"></div>
     <div class="container">
       <header class="header">
         <img
@@ -44,79 +45,41 @@
         <div class="rock" selected-icon="rock"><img src="./images/icon-rock.svg" alt="Rock" class="rock__image"></div>
       </section>
 
-      <!-- <section class="step_two gamearea hide">
+      <section class="step_two gamearea hide">
         <div class="user">
           <div class="user__title">YOU PICKED</div>
-          <div class="user__picked user__picked--paper">
+          <div class="user__picked">
             <img
-              src="./images/icon-paper.svg"
-              alt="Paper"
-              class="user__paper"
-            />
-          </div>
-        </div>
-        <div class="house">
-          <div class="house__title">THE HOUSE PICKED</div>
-          <div class="house__picked house__picked--empty"></div>
-        </div>
-      </section>
-
-      <section class="step_three gamearea hide">
-        <div class="user">
-          <div class="user__title">YOU PICKED</div>
-          <div class="user__picked user__picked--paper">
-            <img
-              src="./images/icon-paper.svg"
-              alt="Paper"
-              class="user__paper"
-            />
-          </div>
-        </div>
-        <div class="house">
-          <div class="house__title">THE HOUSE PICKED</div>
-          <div class="house__picked house__picked--rock">
-            <img
-              src="./images/icon-rock.svg"
-              alt="Rock"
-              class="user__rock"
-            />
-          </div>
-        </div>
-      </section> -->
-
-      <section class="step_four gamearea hide">
-        <div class="user">
-          <div class="user__title">YOU PICKED</div>
-          <div class="user__picked user__picked--paper">
-            <img
-              src="./images/icon-paper.svg"
-              alt="Paper"
-              class="user__paper user__icon"
+              src=""
+              alt=""
+              class=" user__icon"
             />
           </div>
         </div>
 
-        <div class="result">
+        <div class="result hide">
           <div class="result__title"></div>
           <div class="play_again">PLAY AGAIN</div>
         </div>
 
         <div class="house">
           <div class="house__title">THE HOUSE PICKED</div>
-          <div class="house__picked house__picked--rock">
+          <div class="house__picked house__picked--empty">
             <img
-              src="./images/icon-rock.svg"
-              alt="Rock"
-              class="user__rock house__icon"
+              src=""
+              alt=""
+              class="house__icon hide"
             />
           </div>
         </div>
       </section>
     </div>
+
+
     <footer>
       <div class="btn btn__rules">RULES</div>
       <div class="overlay">
-        <div class="overlay__card overlay__card--toggle">
+        <div class="overlay__card overlay__card--toggle scale-out">
           <div class="overlay__header">
             <h3 class="overlay__title">RULES</h3>
             <img
@@ -134,6 +97,6 @@
       </div>
     </footer>
     <script src="./scripts/rules.js" defer></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/game.js"></script>
   </body>
 </html>

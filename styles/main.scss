@@ -1,48 +1,11 @@
-@import "./typography";
-@import "./colors";
+@import "./base/variables";
+@import "./base/typography";
+@import "./base/reset";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/rulesOverlay";
 @import "./layout/gamearea";
-@import "./layout/stepone";
-@import "./layout/steptwo";
-@import "./layout/stepthree";
-@import "./layout/stepfour";
+@import "./components/icons";
+@import "./components/result";
+@import "./components/userhouse";
+@import "./components/rulesOverlay";
 @import "./global/animation";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $font-family;
-  background: $clr-background;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-
-
-.container {
-  height: 100vh;
-  width: 100vw;
-  min-width: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  display: grid;
-  place-items: center;
-  align-items: flex-start;
-}
-
-.hide {
-    visibility: hidden;
-    transform: scale(0);
-}
