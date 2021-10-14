@@ -7,9 +7,4 @@
   right: 30px;
   color: $clr-light-text;
   cursor: pointer;
-
-  @media screen and (max-width: 376px) {
-    right: 25%;
-    transform: translateX(-50%);
-  }
 }
