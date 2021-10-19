@@ -30,8 +30,8 @@ Users should be able to:
 ![Mobile](/screenshots/mobile.png)
 
 ### Links
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-using-html-css-and-javascript-d6ldi8dM4)
-- Live Site URL: [Live Site](https://amitkafle.github.io/FEM-Rock-Paper-Scissor/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-using-html-css-and-javascript-d6ldi8dM4)
+- Live Site URL: [Github Pages](https://amitkafle.github.io/FEM-Rock-Paper-Scissor/)
 
 ### My process
 ### Built with
